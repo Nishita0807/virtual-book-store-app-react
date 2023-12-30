@@ -8,6 +8,10 @@ const BookDetail = ({ books }) => {
 
   // Find the book with the matching ID
   const selectedBook = books.find((book) => book.id === id);
+  const scrollToTop = () => {
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  };
+
 
   return (
     <div>
@@ -47,7 +51,7 @@ height: "400px",transform: "rotate(-8deg)"}}> </div>
               .filter((book) => book.id !== id) // Exclude the selected book
               .map((book) => (
                 <div key={book.id} className="book-items">
-                  <Link to={`/book/${book.id}`}>
+                  <Link to={`/book/${book.id}`} onClick={scrollToTop}>
                     <div style={{background: `url(${book.volumeInfo.imageLinks.thumbnail}) lightgray 50% / cover no-repeat` , width:"130px", height: "200px"}}> </div>
                   </Link>
                 </div>
