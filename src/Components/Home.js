@@ -28,7 +28,7 @@ const Home = ({ books }) => {
               <p style={{ color: "#D2D2D2", fontSize: "12px" }}>
                 {truncateDescription(book.volumeInfo.description, maxDescriptionLength)}
               </p>
-              <div style={{ color: "white", border: "1px solid white", padding: "5px" }}>Now Read!</div>
+              <Link to={book.volumeInfo.previewLink} style={{textDecoration:"none",color:"white"}}><div style={{ color: "white", border: "1px solid white", padding: "5px" }}>Now Read!</div></Link>
             </div>
           </div>
         ))}
