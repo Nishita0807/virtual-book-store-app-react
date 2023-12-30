@@ -1,38 +1,176 @@
-.App {
-  text-align: center;
+body{
+    margin:0px;
+    padding:0px;
+    background-color: #242020;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding:12px;
+    background-color: #292828;
+    color: white;
+    padding-left:24px;
+    padding-right: 24px;
+    margin: 0px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.home{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap:10px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+
+
+input::placeholder{
+    color:white;
+    background-color: #373737;
+  
+}
+input{
+
+    border: none;
+    
+    
+
+}
+
+.s-button>button{
+    margin-left: 10px;
+    width: 148px;
+
+height: 33px;
+flex-shrink: 0;
+background-color: #292828;
+color: white;
+}
+
+
+
+.s-icon{
+    display: flex;
+    align-items: center;
+    justify-content:flex-start;
+    width:550px;
+height: 33px;
+background-color: #373737;
+
+
+}
+
+
+.s-icon>div{
+    background-color: #373737;
+}
+
+.s-icon>div:first-child{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-left: 12px;
+    padding-right: 24px;
+}
+
+.icon{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap:10px;
+}
+
+
+.profile{
   display: flex;
-  flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+    width: 50px;
+height: 50px;
+flex-shrink: 0;
+border-radius: 250px;
+border: 2px solid #C3BEBE;
+background: url(./profile.png), lightgray 50% / cover no-repeat;
+
+}
+.profile>div{
+    margin-top: 50px;
 }
 
-.App-link {
-  color: #61dafb;
-}
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+
+
+
+
+/* Home page css */
+.book-grid {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr); /* Create a grid with six columns */
+    gap: 20px; /* Adjust the gap between items as needed */
   }
-  to {
-    transform: rotate(360deg);
-  }
+  
+ .book-item{
+    padding: 36px;
+ }
+.book-all{
+    background-color: #242020;
 }
+  h2{
+    color:white;
+    padding-left:36px;
+  }
+
+
+
+
+
+  /* above more book in home page only */
+.featured-books{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 36px;
+    gap:10px;
+    
+
+}
+  .featured-book-item{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+   background-color: white;
+    
+  }
+ 
+  .book-details{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    
+   
+    width:270px;
+    height:210px;
+    padding-left:10px;
+    padding-right: 10px;
+  }
+
+
+  .books-list{
+    padding:36px;
+  }
+
+  .book-header{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap:10px;
+    
+    padding-left:36px;
+    padding-right: 36px;
+    padding-bottom:12px;
+  }
+
+  .book-header>div:nth-child(2){
+    width:1200px;
+  }
